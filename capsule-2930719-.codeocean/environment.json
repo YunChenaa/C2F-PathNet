@@ -1,0 +1,33 @@
+{
+	"version": 1,
+	"base_image": "registry.codeocean.com/codeocean/pytorch:2.4.0-cuda12.4.0-mambaforge24.5.0-0-python3.12.4-ubuntu22.04",
+	"options": {},
+	"installers": {
+		"pip": {
+			"packages": [
+				{
+					"name": "pandas",
+					"version": "2.2.3"
+				},
+				{
+					"name": "rdkit",
+					"version": "2024.9.6"
+				},
+				{
+					"name": "scikit-learn",
+					"version": "1.6.1"
+				},
+				{
+					"name": "scikit-multilearn",
+					"version": "0.2.0"
+				},
+				{
+					"name": "torch-geometric",
+					"version": "2.6.1"
+				}
+			],
+			"options": {},
+			"pre_install_options": {}
+		}
+	}
+}

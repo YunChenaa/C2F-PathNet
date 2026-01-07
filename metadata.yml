@@ -1,0 +1,38 @@
+metadata_version: 1
+name: A Coarse-to-Fine Labels Learning Framework for Metabolic Pathway Prediction
+description: |-
+  Effective prediction of the metabolic pathways
+  of compounds can greatly accelerate the progress and
+  efficiency of disease research. However, most existing
+  machine learning or deep learning models focus solely on
+  predicting coarse-grained pathway types, which fails to meet
+  the practical needs of researchers in this field who require
+  more fine-grained metabolic pathway predictions for
+  detailed mechanistic understanding and drug development
+  applications. In this study, we propose a coarse-to-fine labels
+  learning framework for metabolic pathway prediction called
+  C2F-PathNet, which simultaneously predicts coarse-grained
+  and fine-grained metabolic pathway types of compounds, supporting up to three levels of labels. C2F-PathNet adopts a
+  multi-task learning framework, where a shared feature
+  extractor learns common representations for all levels, followed by level-specific branch modules incorporating a
+  dual-layer feature fusion mechanism to capture level-specific
+  features. Furthermore, a hierarchy-guided mechanism and a
+  consistency loss are employed to further enhance fine- grained predictions. Experiments on a KEGG dataset
+  comprising 5,626 compounds with up to three levels of
+  pathway labels demonstrate the superior performance of the
+  proposed C2F-PathNet through both ablation and
+  comparative experimental analyses. Transferring C2F- PathNet as a pre-trained model to a constructed NAFLD
+  (Non-Alcoholic Fatty Liver Disease) dataset further validates
+  its generalization capability in specific domains, with F1- scores reaching 0.881, 0.807, and 0.727 at level1, level2, and
+  level3, respectively, providing valuable insights for disease
+  mechanism research and drug discovery.
+authors:
+- name: Jing Liu
+  affiliations:
+  - name: Shanghai maritime university
+- name: Songwei Chen
+  affiliations:
+  - name: Shanghai maritime university
+- name: Kun Li
+  affiliations:
+  - name: Shanghai maritime university
